@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    background:linear-gradient(to right, rgb(255,255, 78, 59),rgb(255, 67, 46) );
+}
+
+
+.music-info img{
+    height: 250px;
+    width: 338px;
+}
+
+
+
+.progress-container{
+   height: 25px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(230, 222, 222);
+    opacity: 0.7;
+    padding: 5px;
+    position: relative;
+}
+
+
+.progress-container > div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    height: 9px;
+    width: 95%;
+    opacity: 1;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+
+#title{
+    background-color:rgb(253, 80, 61) ;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+.navigation{
+   margin-top: 5px;
+    width: inherit;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(253, 97, 80);
+}
+
+
+.time{
+    position: relative;
+    background: rgb(230, 222, 222);
+    opacity: 0.7;
+    display: inline-block;
+    left: 164px;
+    transform: translateX(-50%);
+    font-size: 19px;
+    font-weight: 100;
+    top: -30px;
+    z-index: -1;
+    transition: all .3s linear;
+    padding: 3px;
+}
+
+
+
+
+.progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    height: 7px;
+    width: 0;
+    opacity: 1;
+    border-radius: 6px;
+    background-color:rgb(253, 97, 80); 
+    max-width: 100% - 20px;
+}
+
+
+
+.navigation button{
+    margin: 5px 10px 5px 10px;
+    padding: 5px;
+}
+
+
+.btn1, .btn2, .btn3{
+  
+    border: 0;
+
+    font-size: 20px;
+    cursor: pointer;
+ /*   padding: 10px;
+    margin: 0 20px;
+    */
+}
+
+.btn2{
+   
+    font-size: 30px;
+}
+
+
+@media (max-width:330px) {
+    
+    .music-info img{
+        height: 200px;
+        width: 100%;
+    }
+
+    .music-info{
+        width: 100%;
+    }
+    
+    .time{
+        left: 150px;
+    }
+
+}
